@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh './mvnw clean install'
+        sudo sh './mvnw clean install'
       }
     }
     stage('Upload to Artifactory') {
